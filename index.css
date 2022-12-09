@@ -1,0 +1,119 @@
+body {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  overflow: hidden;
+}
+body .road {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  background-color: rgb(46, 45, 45);
+}
+body .road .snake {
+  position: absolute;
+  width: 100px;
+  top: 50px;
+  transition: 2s;
+  height: 10px;
+  border: 2px solid black;
+  background-color: rgb(238, 238, 31);
+}
+body .road .stop {
+  -webkit-animation: none;
+          animation: none;
+}
+body .road .sn1 {
+  top: 130px;
+}
+body .road .sn2 {
+  top: 210px;
+}
+body .road .start {
+  -webkit-animation: start infinite linear;
+          animation: start infinite linear;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@-webkit-keyframes start {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+@keyframes start {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+body .road .move {
+  -webkit-animation: move infinite linear;
+          animation: move infinite linear;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
+body .border {
+  width: 300px;
+  height: 150px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to right, peru, rgb(222, 156, 90), rgb(248, 153, 58));
+}
+body .border .box {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: purple;
+  transition: 1.2s;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 550;
+}
+body .border .b1 {
+  background-color: rgb(243, 32, 32);
+  box-shadow: 2px 2px 1px 1px rgb(243, 32, 32), 4px 4px 1px 1px rgb(243, 32, 32), 6px 6px 1px 1px rgb(243, 32, 32), 8px 8px 1px 1px rgb(243, 32, 32), 10px 10px 1px 1px rgb(243, 32, 32), 12px 12px 1px 1px black;
+  border: 2px solid rgb(160, 8, 8);
+}
+body .border .b2 {
+  background-color: orange;
+  box-shadow: 2px 2px 1px 1px orange, 4px 4px 1px 1px orange, 6px 6px 1px 1px orange, 8px 8px 1px 1px orange, 10px 10px 1px 1px orange, 12px 12px 1px 1px black;
+  border: 2px solid rgb(117, 37, 7);
+}
+body .border .b3 {
+  background-color: rgb(30, 235, 30);
+  box-shadow: 2px 2px 1px 1px rgb(30, 235, 30), 4px 4px 1px 1px rgb(30, 235, 30), 6px 6px 1px 1px rgb(30, 235, 30), 8px 8px 1px 1px rgb(30, 235, 30), 10px 10px 1px 1px rgb(30, 235, 30), 12px 12px 1px 1px black;
+  border: 2px solid rgb(10, 127, 10);
+}
+body .border .select {
+  box-shadow: 2px 2px 1px 1px black inset, 6px 6px 1px 1px black inset;
+  transition: 1.2s;
+}/*# sourceMappingURL=index.css.map */
